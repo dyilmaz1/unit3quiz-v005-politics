@@ -381,6 +381,25 @@ export function Dashboard() {
           <p className="footer-note">
             Data source: Warehouse and Retail Sales Dataset | Analysis generated on {new Date().toLocaleDateString()}
           </p>
+          <div className="footer-links">
+            <a 
+              href="https://catalog.data.gov/dataset/warehouse-and-retail-sales" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              Data Source: Warehouse and Retail Sales Dataset
+            </a>
+            <span className="footer-separator">|</span>
+            <a 
+              href="https://github.com/dyilmaz1/unit3quiz-v005-politics" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              View Source Code on GitHub
+            </a>
+          </div>
         </footer>
       </article>
     </div>
