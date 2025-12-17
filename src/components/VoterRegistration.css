@@ -1,0 +1,217 @@
+.voter-registration-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+}
+
+.voter-registration-card {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+}
+
+.voter-registration-card h2 {
+  margin: 0 0 2rem 0;
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 1rem;
+}
+
+.statement-section {
+  margin-bottom: 2rem;
+}
+
+.statement-section h3 {
+  color: #667eea;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.statement-box {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-left: 4px solid #667eea;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.statement-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.decision-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.decision-badge.support {
+  background: #d4edda;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+}
+
+.decision-badge.no-support {
+  background: #f8d7da;
+  color: #721c24;
+  border: 2px solid #f5c6cb;
+}
+
+.badge-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.badge-text {
+  font-weight: 500;
+}
+
+.status-message {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.status-message.info {
+  background: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+.decision-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.decision-button {
+  flex: 1;
+  padding: 1.25rem 2rem;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: inherit;
+}
+
+.decision-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.decision-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.decision-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.support-button {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+}
+
+.support-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #218838 0%, #1aa179 100%);
+}
+
+.support-button.selected {
+  border-color: #155724;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.3);
+}
+
+.no-support-button {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+}
+
+.no-support-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #c82333 0%, #bd2130 100%);
+}
+
+.no-support-button.selected {
+  border-color: #721c24;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.3);
+}
+
+.button-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.saving-indicator {
+  text-align: center;
+  padding: 1rem;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.info-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.info-text {
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .voter-registration-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .voter-registration-card h2 {
+    font-size: 1.75rem;
+  }
+
+  .statement-text {
+    font-size: 1.1rem;
+  }
+
+  .decision-buttons {
+    flex-direction: column;
+  }
+
+  .decision-button {
+    width: 100%;
+  }
+}
+
